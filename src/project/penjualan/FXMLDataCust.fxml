@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.penjualan.FXMLDataCustController">
+   <children>
+      <Label layoutX="26.0" layoutY="27.0" text="Data Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbvcust" layoutX="18.0" layoutY="73.0" prefHeight="285.0" prefWidth="482.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnawal" layoutX="14.0" layoutY="370.0" mnemonicParsing="false" onAction="#awalklik" prefHeight="25.0" prefWidth="68.0" text="awal" />
+      <Button fx:id="btnsesudah" layoutX="298.0" layoutY="370.0" mnemonicParsing="false" onAction="#sesudahklik" text="sesudah" />
+      <Button fx:id="btnsebelum" layoutX="139.0" layoutY="370.0" mnemonicParsing="false" onAction="#sebelumklik" prefHeight="25.0" prefWidth="75.0" text="sebelum" />
+      <Button fx:id="btntambah" layoutX="14.0" layoutY="432.0" mnemonicParsing="false" onAction="#tambahklik" prefHeight="25.0" prefWidth="68.0" text="tambah" />
+      <Button fx:id="btnupdate" layoutX="139.0" layoutY="432.0" mnemonicParsing="false" onAction="#updateklik" prefHeight="25.0" prefWidth="75.0" text="update" />
+      <Button fx:id="btnhapus" layoutX="298.0" layoutY="432.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="25.0" prefWidth="60.0" text="hapus" />
+      <Button fx:id="btnquit" layoutX="448.0" layoutY="432.0" mnemonicParsing="false" onAction="#quitklik" prefHeight="25.0" prefWidth="68.0" text="quit" />
+      <Button fx:id="btnakhir" layoutX="448.0" layoutY="370.0" mnemonicParsing="false" onAction="#akhirklik" prefHeight="25.0" prefWidth="68.0" text="akhir" />
+      <Label layoutX="272.0" layoutY="45.0" text="Cari Data:" />
+      <TextField id="searchcust" fx:id="searchcust" layoutX="350.0" layoutY="41.0" onKeyReleased="#cariData" />
+   </children>
+</AnchorPane>
